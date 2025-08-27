@@ -6,5 +6,4 @@ class PropertiesConfig(AppConfig):
     name = 'properties'
 
     def ready(self):
-        from .signals import delete_cache_on_delete
-        from .signals import delete_cache_on_save
+        import properties.signals
